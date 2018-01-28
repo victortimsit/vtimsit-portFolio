@@ -1,6 +1,10 @@
 class SceneWebGl {
     constructor() {
+        this.$body = document.querySelector('body')
+        this.$canvas = document.createElement('canvas')
 
+        this.$body.appendChild(this.$canvas)
+        
         this.renderer = new THREE.WebGLRenderer({ canvas: document.querySelector('canvas'), antialias: false })
 
         this.renderer.setSize(window.innerWidth, window.innerHeight)
