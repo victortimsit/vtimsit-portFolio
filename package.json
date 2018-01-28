@@ -1,5 +1,5 @@
 {
-  "name": "Template---Gulp-Eslint-Stylus",
+  "name": "vtimsit-portFolio",
   "version": "1.0.0",
   "description": "Gulp init",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vtimsit/Template---Gulp-Eslint-Stylus.git"
+    "url": "git+https://github.com/vtimsit/vtimsit-portFolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vtimsit/Template---Gulp-Eslint-Stylus/issues"
+    "url": "https://github.com/vtimsit/vtimsit-portFolio/issues"
   },
-  "homepage": "https://github.com/vtimsit/Template---Gulp-Eslint-Stylus#readme",
+  "homepage": "https://github.com/vtimsit/vtimsit-portFolio#readme",
   "devDependencies": {
     "browser-sync": "^2.23.5",
     "del": "^3.0.0",
