@@ -7,14 +7,14 @@ class Cubes {
         this.renderer = SceneWebGl.renderer
         this.geometry = new THREE.CubeGeometry(50, 50, 50)
 
-        this.material = new THREE.MeshLambertMaterial({ color: 0x706fd3, transparent: true })
+        this.material = new THREE.MeshLambertMaterial({ color: 0xe7e7e7, transparent: true })
         
-        for(let i = 0; i < 200; i++){
+        for(let i = 0; i < 50; i++){
             this.mesh = new THREE.Mesh(this.geometry, this.material)
 
-            this.mesh.position.z = Math.floor(Math.random() * -3000)
-            this.mesh.position.x = Math.floor(Math.random() * (800 - (-800)) + (-800))
-            this.mesh.position.y = Math.floor(Math.random() * (800 - (-800)) + (-800))
+            this.mesh.position.z = Math.floor(Math.random() * ((- SceneWebGl.camera.far - this.geometry.parameters.width) + 1000) - 1000)
+            this.mesh.position.x = Math.floor(Math.random() * (SceneWebGl.$canvas.width * 2) - SceneWebGl.$canvas.width)
+            this.mesh.position.y = Math.floor(Math.random() * (SceneWebGl.$canvas.height * 2) - SceneWebGl.$canvas.height)
 
             this.mesh.rotation.x = Math.floor(Math.random() * (360 - 0) + 360)
             this.mesh.rotation.y = Math.floor(Math.random() * (360 - 0) + 360)
