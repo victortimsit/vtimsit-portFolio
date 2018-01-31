@@ -5,7 +5,7 @@ class SceneWebGl {
 
         this.$body.appendChild(this.$canvas)
         
-        this.renderer = new THREE.WebGLRenderer({ canvas: document.querySelector('canvas'), antialias: true })
+        this.renderer = new THREE.WebGLRenderer({ canvas: document.querySelector('canvas'), antialias: false })
 
         this.renderer.setSize(window.innerWidth, window.innerHeight)
         this.renderer.setClearColor(0xfefefe)
