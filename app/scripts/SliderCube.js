@@ -1,11 +1,17 @@
-const $slides = document.querySelectorAll('.slides')
-
-let slidesNumber = 1
-
-document.addEventListener('mousedown', () => 
+class SliderCube 
 {
-    slidesNumber++
+    constructor() 
+    {
+        this.$slides = document.querySelectorAll('.slides')
 
-    $slides[slidesNumber - 1].classList.remove('slides--right')
-    $slides[slidesNumber - 2].classList.add('slides--left')
-})
+        this.slidesNumber = 1
+
+        document.addEventListener('mousedown', () => 
+        {
+            this.slidesNumber++
+
+            this.$slides[this.slidesNumber - 1].classList.remove('slides--right')
+            this.$slides[this.slidesNumber - 2].classList.add('slides--left')
+        })
+    }
+}
