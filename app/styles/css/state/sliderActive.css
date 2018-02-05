@@ -1,0 +1,8 @@
+.slides--right {
+  transform: translateX(100vw);
+  opacity: 0;
+}
+.slides--left {
+  transform: translateX(-100vw);
+  opacity: 0;
+}
