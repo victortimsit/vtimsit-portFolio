@@ -1,0 +1,4 @@
+.slides__element {
+  transform-style: preserve-3d;
+  transform: translateZ(300px);
+}
