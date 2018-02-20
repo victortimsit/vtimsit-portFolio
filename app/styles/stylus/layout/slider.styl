@@ -1,24 +1,25 @@
-.wrap
-  perspective: 800px
-
-  left: 50%
-  top: 50%
+.container
+  width 100vw
+  height 100vh
+  
+  margin: 0 auto
 
   position: absolute
 
-.slides
-  width 0px
-  height 0px
+  perspective: 800px
 
-  position relative
+.cubeSlider
+  // top 50%
+  // left 50%
 
-  background-color: red
+  position absolute
 
-  transform-style: preserve-3d
+  transform-style preserve-3d
 
-  transition: transform 2s ease
+.cubeSlider_1
+  top 460px
+  left 500px
 
-  transform: translateX(-50%) translateY(-50%)
-
-  opacity: 1
-
+.cubeSlider_2
+  top 400px
+  left 760px

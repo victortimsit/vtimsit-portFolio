@@ -1,6 +1,0 @@
-.slides--right {
-  transform: translateX(-50%) translateY(-50%) rotateY(90deg);
-}
-.slides--left {
-  transform: translateX(-50%) translateY(-50%) rotateY(-90deg);
-}

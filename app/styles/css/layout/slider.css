@@ -1,16 +1,19 @@
-.wrap {
-  perspective: 800px;
-  left: 50%;
-  top: 50%;
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
   position: absolute;
+  perspective: 800px;
 }
-.slides {
-  width: 0px;
-  height: 0px;
-  position: relative;
-  background-color: #f00;
+.cubeSlider {
+  position: absolute;
   transform-style: preserve-3d;
-  transition: transform 2s ease;
-  transform: translateX(-50%) translateY(-50%);
-  opacity: 1;
+}
+.cubeSlider_1 {
+  top: 460px;
+  left: 500px;
+}
+.cubeSlider_2 {
+  top: 400px;
+  left: 760px;
 }

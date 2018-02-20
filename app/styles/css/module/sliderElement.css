@@ -1,6 +1,6 @@
-.slides__element {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  transform: translateX(-50%) translateY(-50%) translateZ(200px);
+/*** Cube faces propertys ***/
+.cubeSlider__item {
+  background: #e7e7e7;
+  position: absolute;
+  transition: transform 300ms ease, opacity 300ms ease;
 }
