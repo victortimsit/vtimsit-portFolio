@@ -1,6 +1,33 @@
-.slides__element {
+/*** Cube faces propertys ***/
+.cubeSlider__item {
   width: 200px;
   height: 200px;
-  position: relative;
-  transform: translateX(-50%) translateY(-50%) translateZ(200px);
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+/*** Cube faces transformations ***/
+.cubeSlider__item_1 {
+  background: #008000;
+  transform: translateZ(100px);
+}
+.cubeSlider__item_2 {
+  background: #f00;
+  transform: translateZ(-100px);
+}
+.cubeSlider__item_3 {
+  background: #008000;
+  transform: rotateY(90deg) translateZ(100px);
+}
+.cubeSlider__item_4 {
+  background: #00f;
+  transform: rotateY(90deg) translateZ(-100px);
+}
+.cubeSlider__item_5 {
+  background: #ffa500;
+  transform: rotateX(90deg) translateZ(100px);
+}
+.cubeSlider__item_6 {
+  background: #ff0;
+  transform: rotateX(90deg) translateZ(-100px);
 }

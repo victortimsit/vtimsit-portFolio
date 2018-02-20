@@ -1,16 +1,18 @@
-.wrap {
-  perspective: 800px;
-  left: 50%;
-  top: 50%;
+.container {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
   position: absolute;
+  perspective: 800px;
 }
-.slides {
-  width: 0px;
-  height: 0px;
-  position: relative;
-  background-color: #f00;
+.cubeSlider {
+  top: 50%;
+  left: 50%;
+  position: absolute;
   transform-style: preserve-3d;
-  transition: transform 2s ease;
-  transform: translateX(-50%) translateY(-50%);
-  opacity: 1;
+  transform: rotateY(45deg);
+  transition: ease 5s;
+}
+.cubeSlider:hover {
+  transform: rotateX(980deg);
 }

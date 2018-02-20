@@ -1,9 +1,34 @@
-.slides__element
+/*** Cube faces propertys ***/
+.cubeSlider__item
     width 200px
     height 200px
 
-    position relative
+    position absolute
 
-    transform translateX(-50%) translateY(-50%) translateZ(200px)
+    top -100px
+    left -100px
 
-   
+/*** Cube faces transformations ***/
+.cubeSlider__item_1
+    background green
+    transform translateZ(100px)
+
+.cubeSlider__item_2
+    background red
+    transform translateZ(-100px)
+
+.cubeSlider__item_3
+    background green
+    transform rotateY(90deg) translateZ(100px)
+
+.cubeSlider__item_4
+    background blue
+    transform rotateY(90deg) translateZ(-100px)
+
+.cubeSlider__item_5
+    background orange
+    transform rotateX(90deg) translateZ(100px)
+
+.cubeSlider__item_6
+    background yellow
+    transform rotateX(90deg) translateZ(-100px)
