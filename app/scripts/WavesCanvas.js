@@ -30,8 +30,8 @@ class WavesCanvas {
         this.context.beginPath()
 
         this.gradient = this.context.createLinearGradient(0, 0, this.$canvas.width, 0)
-        this.gradient.addColorStop(0.4, '#FA709A')
-        this.gradient.addColorStop(1, '#FEE140')
+        this.gradient.addColorStop(0.2, '#FA709A')
+        this.gradient.addColorStop(1, '#FDBC5D')
         this.context.fillStyle = this.gradient
 
         this.context.moveTo(this.$canvas.width, this.canvasRatio.y * 4)
@@ -71,8 +71,8 @@ class WavesCanvas {
         this.context.beginPath()
 
         this.gradient = this.context.createLinearGradient(0, 0, this.$canvas.width, 0)
-        this.gradient.addColorStop(0.4, '#FA709A')
-        this.gradient.addColorStop(1, '#FEE140')
+        this.gradient.addColorStop(0.2, '#FA709A')
+        this.gradient.addColorStop(1, '#FDBC5D')
         this.context.fillStyle = this.gradient
 
         this.context.moveTo(this.$canvas.width, this.canvasRatio.y * 4)

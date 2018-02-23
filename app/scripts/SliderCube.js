@@ -24,8 +24,8 @@ class SliderCube
             $slide.style.width = `${this.slideWidth}px` // Set slide width
             $slide.style.height = `${this.slideHeight}px` // Set slide height
 
-            $slide.style.left = `${- this.slideWidth / 2}px` // Set slide left
-            $slide.style.top = `${- this.slideHeight / 2}px` // Set slide top
+            // $slide.style.left = `${- this.slideWidth / 2}px` // Set slide left
+            // $slide.style.top = `${- this.slideHeight / 2}px` // Set slide top
 
             $slide.style.opacity = 0 
             $slide.style.transformOrigin = `50% 50% ${-this.slideWidth / 2}px`
