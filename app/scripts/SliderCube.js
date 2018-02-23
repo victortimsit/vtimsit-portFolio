@@ -24,26 +24,27 @@ class SliderCube
             $slide.style.width = `${this.slideWidth}px` // Set slide width
             $slide.style.height = `${this.slideHeight}px` // Set slide height
 
-            $slide.style.left = `${- this.slideWidth / 2}px` // Set slide left
-            $slide.style.top = `${- this.slideHeight / 2}px` // Set slide top
+            // $slide.style.left = `${- this.slideWidth / 2}px` // Set slide left
+            // $slide.style.top = `${- this.slideHeight / 2}px` // Set slide top
 
             $slide.style.opacity = 0 
-            $slide.style.transform = `rotateY(${this.rotation.yPos}deg)  rotateX(${this.rotation.xPos}deg) translateZ(${this.slideWidth / 2}px)` // Set slide transformations
+            $slide.style.transformOrigin = `50% 50% ${-this.slideWidth / 2}px`
+            $slide.style.transform = `rotateY(${this.rotation.yPos}deg)  rotateX(${this.rotation.xPos}deg)` // Set slide transformations
         }
 
         // First slide visible 
         this.$slides[0].style.opacity = 1
-        this.$slides[0].style.transform = `rotateY(0deg) rotateX(0deg) translateZ(${this.slideWidth / 2}px)`
+        this.$slides[0].style.transform = `rotateY(0deg) rotateX(0deg)`
 
         // Listening mousedown 
         document.addEventListener('mousedown', () => {
             this.slidesNumber++
 
             this.$slides[this.slidesNumber - 1].style.opacity = 1
-            this.$slides[this.slidesNumber - 1].style.transform = `rotateY(0deg) rotateX(0) translateZ(${this.slideWidth / 2}px)`
+            this.$slides[this.slidesNumber - 1].style.transform = `rotateY(0deg) rotateX(0)`
 
             this.$slides[this.slidesNumber - 2].style.opacity = 0
-            this.$slides[this.slidesNumber - 2].style.transform = `rotateY(${this.rotation.yNeg}deg) rotateX(${this.rotation.xNeg}deg) translateZ(${this.slideWidth / 2}px)`
+            this.$slides[this.slidesNumber - 2].style.transform = `rotateY(${this.rotation.yNeg}deg) rotateX(${this.rotation.xNeg}deg)`
         })
     }
 }
