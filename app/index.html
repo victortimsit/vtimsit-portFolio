@@ -9,15 +9,24 @@
   <!--build:css styles/styles.min.css-->
   <link type="text/css" rel="stylesheet" href="styles/css/base/styles.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/layout/slider.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/layout/spheres.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/layout/alerts.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/sliderElement.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/navigationElement.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/module/alertsElement.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/sliderActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/navigationActive.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/state/alertsActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/tools/fonts.css" />
   <!--endbuild-->
 </head>
 
 <body>
+  <div class="sphere sphere_1 js-cursor-parallax" data-amplitude="1.0"></div>
+  <div class="sphere sphere_2 js-cursor-parallax" data-amplitude="0.8"></div>
+  <div class="sphere sphere_3 js-cursor-parallax" data-amplitude="0.6"></div>
+  <div class="sphere sphere_4 js-cursor-parallax" data-amplitude="0.4"></div>
+  <div class="sphere sphere_5 js-cursor-parallax" data-amplitude="0.2"></div>
   <h3>v.timsit</h3>
   <div class="navigationMenu">
     <ul>
@@ -103,52 +112,61 @@
     <div class="cubeSlider cubeSlider_3">
       <div class="cubeSlider__item cubeSlider_3__item">
         <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__link">Prev</a>
+          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
           <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__link">Next</a>
+          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
         </div>
       </div>
       <div class="cubeSlider__item cubeSlider_3__item">
         <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__link">Prev</a>
+          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
           <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__link">Next</a>
+          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
         </div>
       </div>
       <div class="cubeSlider__item cubeSlider_3__item">
         <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__link">Prev</a>
+          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
           <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__link">Next</a>
+          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
         </div>
       </div>
       <div class="cubeSlider__item cubeSlider_3__item">
         <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__link">Prev</a>
+          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
           <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__link">Next</a>
+          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
         </div>
       </div>
       <div class="cubeSlider__item cubeSlider_3__item">
         <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__link">Prev</a>
+          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
           <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__link">Next</a>
+          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
         </div>
       </div>
       <div class="cubeSlider__item cubeSlider_3__item">
         <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__link">Prev</a>
+          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
           <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__link">Next</a>
+          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="alerts">
+    <div class="alerts__firstProject">
+      First project !
+    </div>
+    <div class="alerts__lastProject">
+      Last project !
     </div>
   </div>
   <!--build:js scripts/main.min.js -->
   <script src="scripts/libraries/three.min.js"></script>
   <script src="scripts/SceneWebGl.js"></script>
   <script src="scripts/Cubes.js"></script>
+  <script src="scripts/CursorParallaxWebGl.js"></script>
   <script src="scripts/CursorParallax.js"></script>
   <script src="scripts/SliderCube.js"></script>
   <script src="scripts/WavesCanvas.js"></script>
