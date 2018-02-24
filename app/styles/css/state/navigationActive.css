@@ -1,0 +1,12 @@
+.navigationMenu__item--active {
+  color: #4a90e2;
+}
+.navigationMenu__bulleted--active {
+  width: 25px;
+  height: 4px;
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 3px;
+  background: linear-gradient(to left, #fdbc5d 20%, #fa709a 125%);
+  transform: translateY(-100%);
+}

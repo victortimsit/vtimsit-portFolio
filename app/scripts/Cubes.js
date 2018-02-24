@@ -7,9 +7,9 @@ class Cubes {
         this.renderer = SceneWebGl.renderer
         this.geometry = new THREE.CubeGeometry(50, 50, 50)
 
-        this.material = new THREE.MeshLambertMaterial({ color: 0xe7e7e7, transparent: true })
+        this.material = new THREE.MeshLambertMaterial({ color: 0x4A90E2, transparent: true, opacity: 0.8 })
         
-        for(let i = 0; i < 500; i++){
+        for(let i = 0; i < 100; i++){
             this.mesh = new THREE.Mesh(this.geometry, this.material)
 
             this.mesh.position.z = Math.floor(Math.random() * ((- SceneWebGl.camera.far - this.geometry.parameters.width) + 100) - 100)
