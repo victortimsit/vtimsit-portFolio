@@ -4,7 +4,7 @@
 // cube.animate()
 const cursorParallax = new CursorParallax()
 
-const wavesCanvas = new WavesCanvas(window.innerWidth, window.innerHeight)
+const wavesCanvas = new WavesCanvas()
 
 const slider = new SliderCube('.cubeSlider_1__item', 520, 520, 90, 0)
 const slider_2 = new SliderCube('.cubeSlider_2__item', 350, 350, 0, -90)
