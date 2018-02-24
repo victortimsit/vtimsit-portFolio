@@ -1,7 +1,8 @@
 // const scene = new SceneWebGl()
 // const cube = new Cubes(0, 200, scene)
-// const cursorParallax = new CursorParallax(cube)
+// const cursorParallax = new CursorParallaxWebGl(cube)
 // cube.animate()
+const cursorParallax = new CursorParallax()
 
 const wavesCanvas = new WavesCanvas(window.innerWidth, window.innerHeight)
 

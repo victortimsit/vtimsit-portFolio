@@ -1,21 +1,26 @@
 class CursorParallax {
-    constructor(cubes) {
-        this.cubes = cubes
-        this.amplitude = 0.5
-
+    constructor() {
         this.setItems()
         this.setMouse()
         this.setRequestAnimationFrame()
     }
 
     setItems() {
-        const $element = this.cubes.camera
-        this.item = {}
+        const $elements = document.querySelectorAll('.js-cursor-parallax')
 
-        this.item.$element = $element
-        this.item.offsetX = 0
-        this.item.offsetY = 0
-        this.item.amplitude = parseFloat(this.amplitude)
+        this.items = []
+
+        for(const $element of $elements) {
+            const item = {}
+            item.$element = $element
+            item.offsetX = 0
+            item.offsetY = 0
+            item.amplitude = parseFloat($element.dataset.amplitude)
+
+            console.log(item.amplitude)
+
+            this.items.push(item)
+        }
     }
 
     setMouse() {
@@ -39,18 +44,23 @@ class CursorParallax {
     }
 
     setRequestAnimationFrame() {
-        window.requestAnimationFrame(this.setRequestAnimationFrame.bind(this))
-        const offsetX = - this.mouse.x * 100 * this.amplitude
-        const offsetY = - this.mouse.y * 100 * this.amplitude
+        const loop = () => {
+            window.requestAnimationFrame(loop)
 
-        // Easing
-        this.item.offsetY += (offsetY - this.item.offsetY) * 0.05
-        this.item.offsetX += (offsetX - this.item.offsetX) * 0.05
-        
-        const roundedOffsetX =  - Math.round(this.item.offsetX * 100) / 100
-        const roundedOffsetY = Math.round(this.item.offsetY * 100) / 100 
-        
-        this.cubes.camera.position.x = roundedOffsetX
-        this.cubes.camera.position.y = roundedOffsetY
+            for(const item of this.items) {
+                const offsetX = - this.mouse.x * 100 * item.amplitude
+                const offsetY = - this.mouse.y * 100 * item.amplitude
+
+                // Easing
+                item.offsetY += (offsetY - item.offsetY) * 0.05
+                item.offsetX += (offsetX - item.offsetX) * 0.05
+                
+                const roundedOffsetX = Math.round(item.offsetX * 100) / 100
+                const roundedOffsetY = Math.round(item.offsetY * 100) / 100 
+
+                item.$element.style.transform = `translateX(${roundedOffsetX}px) translateY(${roundedOffsetY}px)`
+            }
+        }
+        loop()
     }
 }
