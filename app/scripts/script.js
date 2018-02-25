@@ -6,6 +6,6 @@ const cursorParallax = new CursorParallax()
 
 const wavesCanvas = new WavesCanvas()
 
-const slider = new SliderCube('.cubeSlider_1__item', 520, 520, 90, 0)
-const slider_2 = new SliderCube('.cubeSlider_2__item', 350, 350, 0, -90)
-const slider_3 = new SliderCube('.cubeSlider_3__item', 150, 150, -90, 0)
+const slider = new SliderCube('.cubeSlider_1__item', '40', '40', 90, 0)
+const slider_2 = new SliderCube('.cubeSlider_2__item', '27', '27', 0, -90)
+const slider_3 = new SliderCube('.cubeSlider_3__item', '12', '12', -90, 0)
