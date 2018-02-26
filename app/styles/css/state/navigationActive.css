@@ -1,5 +1,6 @@
 .navigationMenu__item--active {
   color: #4a90e2;
+  transition: 150ms ease;
 }
 .navigationMenu__bulleted--active {
   width: 25px;

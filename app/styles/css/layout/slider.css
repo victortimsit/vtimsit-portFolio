@@ -1,31 +1,9 @@
-.container {
+.page {
   width: 68vw;
-  height: 40vw;
-  margin: 0 auto;
+  height: 100vh;
   position: absolute;
   top: 50%;
   left: 50%;
-  perspective: 800px;
   transform: translateX(-50%) translateY(-50%);
-}
-.cubeSlider {
-  float: left;
-  transform-style: preserve-3d;
-}
-.cubeSlider_1 {
-  width: 40vw;
-  height: 40vw;
-  margin-right: 0.5vw;
-}
-.cubeSlider_2 {
-  width: 27vw;
-  height: 27vw;
-  margin-left: 0.5vw;
-  margin-bottom: 0.5vw;
-}
-.cubeSlider_3 {
-  width: 12vw;
-  height: 12vw;
-  margin-left: 0.5vw;
-  margin-top: 0.5vw;
+  transition: transform 300ms ease;
 }

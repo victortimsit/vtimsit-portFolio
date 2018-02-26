@@ -1,24 +1,5 @@
-/*** Cube faces propertys ***/
-.cubeSlider__item {
-  position: absolute;
-  border-radius: 20px;
-  background-color: #fafafa;
-  transition: transform 300ms ease, opacity 300ms ease, box-shadow 150ms ease;
-}
-.cubeSlider_1__item {
-  overflow: hidden;
-}
-.cubeSlider_1__item__preview {
-  width: 100%;
-}
-.cubeSlider_3__item {
-  display: flex;
-  text-align: center;
-}
-.cubeSlider_3__item .cubeSlider_3__item__button {
-  margin: auto;
-}
-.cubeSlider_3__item .cubeSlider_3__item__button .cubeSlider_3__item__button__slash {
-  display: inline-block;
-  margin: 0;
+.slider__element {
+  opacity: 1;
+  transition: transform 0.3s cubic-bezier(1, -0.03, 0.43, 1.4), opacity 0.5s ease;
+  will-change: transform;
 }
