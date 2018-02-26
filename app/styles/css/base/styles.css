@@ -46,4 +46,5 @@ a {
 }
 ::selection {
   background-color: #fa709a;
+  color: #000;
 }
