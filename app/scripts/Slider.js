@@ -42,7 +42,6 @@ class Slider {
 
             // Disable transition delay after slide transition
             for(const sphere of this.$spheres) {
-                // sphere.style.display = 'block'
                 setTimeout(() => {
                     sphere.classList.remove('slider__element')
                     sphere.classList.add('js-cursor-parallax')
@@ -86,9 +85,6 @@ class Slider {
             for(const sphere of this.$spheres) {
                 sphere.classList.remove('js-cursor-parallax')
                 sphere.classList.add('slider__element')
-                setTimeout(() => {
-                    // sphere.style.display = 'none'
-                }, 1300)
             }
             // Work
             this.$work.classList.add('navigationMenu__item')
