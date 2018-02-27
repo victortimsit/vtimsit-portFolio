@@ -2,9 +2,6 @@
   color: #d0d0d0;
   transition: 150ms ease;
 }
-.navigationMenu__item:hover {
-  transform: scale(1.2);
-}
 .navigationMenu__bulleted {
   width: 25px;
   height: 4px;
