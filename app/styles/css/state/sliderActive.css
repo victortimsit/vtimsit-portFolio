@@ -1,0 +1,28 @@
+.slide--bottom .slider__element {
+  transform: translateX(-50%) translateY(50%) !important;
+}
+.slide--top .slider__element {
+  transform: translateX(-50%) translateY(-135vh) !important;
+}
+/** delay of transition **/
+.apparition-delay-1.slider__element {
+  transition-delay: 0.25s;
+}
+.apparition-delay-2.slider__element {
+  transition-delay: 0.5s;
+}
+.apparition-delay-3.slider__element {
+  transition-delay: 0.7s;
+}
+.apparition-delay-4.slider__element {
+  transition-delay: 0.85s;
+}
+.apparition-delay-5.slider__element {
+  transition-delay: 1s;
+}
+.apparition-delay-6.slider__element {
+  transition-delay: 1.1s;
+}
+.apparition-delay-7.slider__element {
+  transition-delay: 1.2s;
+}

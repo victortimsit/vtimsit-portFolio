@@ -35,6 +35,7 @@ li {
   font-size: 22px;
   list-style: none;
   cursor: pointer;
+  user-select: none;
 }
 p {
   margin: 0px 30px 15px 30px;

@@ -8,161 +8,186 @@
   <title>Page</title>
   <!--build:css styles/styles.min.css-->
   <link type="text/css" rel="stylesheet" href="styles/css/base/styles.css" />
-  <link type="text/css" rel="stylesheet" href="styles/css/layout/slider.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/layout/sliderCube.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/layout/spheres.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/layout/alerts.css" />
-  <link type="text/css" rel="stylesheet" href="styles/css/module/sliderElement.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/layout/slider.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/module/sliderCubeElement.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/navigationElement.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/alertsElement.css" />
-  <link type="text/css" rel="stylesheet" href="styles/css/state/sliderActive.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/module/sliderElement.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/state/sliderCubeActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/navigationActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/alertsActive.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/state/sliderActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/tools/fonts.css" />
   <!--endbuild-->
 </head>
 
 <body>
-  <div class="sphere sphere_1 js-cursor-parallax" data-amplitude="1.0"></div>
-  <div class="sphere sphere_2 js-cursor-parallax" data-amplitude="0.8"></div>
-  <div class="sphere sphere_3 js-cursor-parallax" data-amplitude="0.6"></div>
-  <div class="sphere sphere_4 js-cursor-parallax" data-amplitude="0.4"></div>
-  <div class="sphere sphere_5 js-cursor-parallax" data-amplitude="0.2"></div>
   <h3>v.timsit</h3>
   <div class="navigationMenu">
     <ul>
-      <li class="navigationMenu__item--active">Work<div class="navigationMenu__bulleted--active"></div></li>
-      <li class="navigationMenu__item">About me<div class="navigationMenu__bulleted"></div></li>
-      <li class="navigationMenu__item">Contact<div class="navigationMenu__bulleted"></div></li>
+      <li class="navigationMenu__work navigationMenu__item navigationMenu__item--active">Work
+        <div class="navigationMenu__work__bulleted navigationMenu__bulleted--active"></div>
+      </li>
+      <li class="navigationMenu__aboutMe navigationMenu__item">About me
+        <div class="navigationMenu__aboutMe__bulleted navigationMenu__bulleted"></div>
+      </li>
+      <li class="navigationMenu__contact navigationMenu__item">Contact
+        <div class="navigationMenu__contact__bulleted navigationMenu__bulleted"></div>
+      </li>
     </ul>
   </div>
-  <div class="container">
-    <div class="cubeSlider cubeSlider_1">
-      <div class="cubeSlider__item cubeSlider_1__item">
-        <img class="cubeSlider_1__item__preview" src="assets/images/sliderPreviews/01_homepage@1x.png" alt="mk2 redesign homepage">
+  <!--Work page-->
+  <div class="page js-slide">
+    <div class="sphere sphere_1 js-cursor-parallax apparition-delay-4" data-amplitude="1.0"></div>
+    <div class="sphere sphere_2 js-cursor-parallax apparition-delay-1" data-amplitude="0.8"></div>
+    <div class="sphere sphere_3 js-cursor-parallax apparition-delay-2" data-amplitude="0.6"></div>
+    <div class="sphere sphere_4 js-cursor-parallax" data-amplitude="0.4"></div>
+    <div class="sphere sphere_5 js-cursor-parallax apparition-delay-3" data-amplitude="0.2"></div>
+    <div class="container slider__element apparition-delay-5">
+      <div class="cubeSlider cubeSlider_1">
+        <div class="cubeSlider__item cubeSlider_1__item">
+          <img class="cubeSlider_1__item__preview" src="assets/images/sliderPreviews/01_homepage@1x.png" alt="mk2 redesign homepage">
+        </div>
+        <div class="cubeSlider__item cubeSlider_1__item">
+        </div>
+        <div class="cubeSlider__item cubeSlider_1__item">
+        </div>
+        <div class="cubeSlider__item cubeSlider_1__item">
+        </div>
+        <div class="cubeSlider__item cubeSlider_1__item">
+        </div>
+        <div class="cubeSlider__item cubeSlider_1__item">
+        </div>
       </div>
-      <div class="cubeSlider__item cubeSlider_1__item">
+
+      <div class="cubeSlider cubeSlider_2">
+        <div class="cubeSlider__item cubeSlider_2__item">
+          <h1>Design</h1>
+          <h2>Type</h2>
+          <p>Mk2 website redesign</p>
+          <h2>Description</h2>
+          <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing
+            content...
+          </p>
+          <h2>Role</h2>
+          <p>Lead designer</p>
+        </div>
+        <div class="cubeSlider__item cubeSlider_2__item">
+          <h1>Design</h1>
+          <h2>Type</h2>
+          <p>Mk2 website redesign</p>
+          <h2>Description</h2>
+          <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing
+            content...
+          </p>
+          <h2>Role</h2>
+          <p>Lead designer</p>
+        </div>
+        <div class="cubeSlider__item cubeSlider_2__item">
+          <h1>Design</h1>
+          <h2>Type</h2>
+          <p>Mk2 website redesign</p>
+          <h2>Description</h2>
+          <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing
+            content...
+          </p>
+          <h2>Role</h2>
+          <p>Lead designer</p>
+        </div>
+        <div class="cubeSlider__item cubeSlider_2__item">
+          <h1>Design</h1>
+          <h2>Type</h2>
+          <p>Mk2 website redesign</p>
+          <h2>Description</h2>
+          <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing
+            content...
+          </p>
+          <h2>Role</h2>
+          <p>Lead designer</p>
+        </div>
+        <div class="cubeSlider__item cubeSlider_2__item">
+          <h1>Design</h1>
+          <h2>Type</h2>
+          <p>Mk2 website redesign</p>
+          <h2>Description</h2>
+          <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing
+            content...
+          </p>
+          <h2>Role</h2>
+          <p>Lead designer</p>
+        </div>
+        <div class="cubeSlider__item cubeSlider_2__item">
+          <h1>Design</h1>
+          <h2>Type</h2>
+          <p>Mk2 website redesign</p>
+          <h2>Description</h2>
+          <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing
+            content...
+          </p>
+          <h2>Role</h2>
+          <p>Lead designer</p>
+        </div>
       </div>
-      <div class="cubeSlider__item cubeSlider_1__item">
-      </div>
-      <div class="cubeSlider__item cubeSlider_1__item">
-      </div>
-      <div class="cubeSlider__item cubeSlider_1__item">
-      </div>
-      <div class="cubeSlider__item cubeSlider_1__item">
+
+      <div class="cubeSlider cubeSlider_3">
+        <div class="cubeSlider__item cubeSlider_3__item">
+          <div class="cubeSlider_3__item__button">
+            <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
+            <p class="cubeSlider_3__item__button__slash">/</p>
+            <a href="#" class="cubeSlider_3__item__button__next">Next</a>
+          </div>
+        </div>
+        <div class="cubeSlider__item cubeSlider_3__item">
+          <div class="cubeSlider_3__item__button">
+            <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
+            <p class="cubeSlider_3__item__button__slash">/</p>
+            <a href="#" class="cubeSlider_3__item__button__next">Next</a>
+          </div>
+        </div>
+        <div class="cubeSlider__item cubeSlider_3__item">
+          <div class="cubeSlider_3__item__button">
+            <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
+            <p class="cubeSlider_3__item__button__slash">/</p>
+            <a href="#" class="cubeSlider_3__item__button__next">Next</a>
+          </div>
+        </div>
+        <div class="cubeSlider__item cubeSlider_3__item">
+          <div class="cubeSlider_3__item__button">
+            <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
+            <p class="cubeSlider_3__item__button__slash">/</p>
+            <a href="#" class="cubeSlider_3__item__button__next">Next</a>
+          </div>
+        </div>
+        <div class="cubeSlider__item cubeSlider_3__item">
+          <div class="cubeSlider_3__item__button">
+            <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
+            <p class="cubeSlider_3__item__button__slash">/</p>
+            <a href="#" class="cubeSlider_3__item__button__next">Next</a>
+          </div>
+        </div>
+        <div class="cubeSlider__item cubeSlider_3__item">
+          <div class="cubeSlider_3__item__button">
+            <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
+            <p class="cubeSlider_3__item__button__slash">/</p>
+            <a href="#" class="cubeSlider_3__item__button__next">Next</a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="cubeSlider cubeSlider_2">
-      <div class="cubeSlider__item cubeSlider_2__item">
-        <h1>Design</h1>
-        <h2>Type</h2>
-        <p>Mk2 website redesign</p>
-        <h2>Description</h2>
-        <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing content...</p>
-        <h2>Role</h2>
-        <p>Lead designer</p>
+    <div class="alerts">
+      <div class="alerts__firstProject">
+        First project !
       </div>
-      <div class="cubeSlider__item cubeSlider_2__item">
-        <h1>Design</h1>
-        <h2>Type</h2>
-        <p>Mk2 website redesign</p>
-        <h2>Description</h2>
-        <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing content...</p>
-        <h2>Role</h2>
-        <p>Lead designer</p>
-      </div>
-      <div class="cubeSlider__item cubeSlider_2__item">
-        <h1>Design</h1>
-        <h2>Type</h2>
-        <p>Mk2 website redesign</p>
-        <h2>Description</h2>
-        <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing content...</p>
-        <h2>Role</h2>
-        <p>Lead designer</p>
-      </div>
-      <div class="cubeSlider__item cubeSlider_2__item">
-        <h1>Design</h1>
-        <h2>Type</h2>
-        <p>Mk2 website redesign</p>
-        <h2>Description</h2>
-        <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing content...</p>
-        <h2>Role</h2>
-        <p>Lead designer</p>
-      </div>
-      <div class="cubeSlider__item cubeSlider_2__item">
-        <h1>Design</h1>
-        <h2>Type</h2>
-        <p>Mk2 website redesign</p>
-        <h2>Description</h2>
-        <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing content...</p>
-        <h2>Role</h2>
-        <p>Lead designer</p>
-      </div>
-      <div class="cubeSlider__item cubeSlider_2__item">
-        <h1>Design</h1>
-        <h2>Type</h2>
-        <p>Mk2 website redesign</p>
-        <h2>Description</h2>
-        <p>Mk2 is a cinema website, we had to redesign them, by setting certain constraints. Highlighting movies, prioritzing content...</p>
-        <h2>Role</h2>
-        <p>Lead designer</p>
-      </div>
-    </div>
-
-    <div class="cubeSlider cubeSlider_3">
-      <div class="cubeSlider__item cubeSlider_3__item">
-        <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
-          <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
-        </div>
-      </div>
-      <div class="cubeSlider__item cubeSlider_3__item">
-        <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
-          <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
-        </div>
-      </div>
-      <div class="cubeSlider__item cubeSlider_3__item">
-        <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
-          <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
-        </div>
-      </div>
-      <div class="cubeSlider__item cubeSlider_3__item">
-        <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
-          <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
-        </div>
-      </div>
-      <div class="cubeSlider__item cubeSlider_3__item">
-        <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
-          <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
-        </div>
-      </div>
-      <div class="cubeSlider__item cubeSlider_3__item">
-        <div class="cubeSlider_3__item__button">
-          <a href="#" class="cubeSlider_3__item__button__prev">Prev</a>
-          <p class="cubeSlider_3__item__button__slash">/</p>
-          <a href="#" class="cubeSlider_3__item__button__next">Next</a>
-        </div>
+      <div class="alerts__lastProject">
+        Last project !
       </div>
     </div>
   </div>
-  <div class="alerts">
-    <div class="alerts__firstProject">
-      First project !
-    </div>
-    <div class="alerts__lastProject">
-      Last project !
-    </div>
-  </div>
-  <!--build:js scripts/main.min.js -->
+  <!--End work page-->
+  <!--Build:js scripts/main.min.js -->
   <script src="scripts/libraries/three.min.js"></script>
   <script src="scripts/SceneWebGl.js"></script>
   <script src="scripts/Cubes.js"></script>
@@ -172,7 +197,7 @@
   <script src="scripts/Slider.js"></script>
   <script src="scripts/WavesCanvas.js"></script>
   <script src="scripts/script.js"></script>
-  <!--endbuild-->
+  <!--Endbuild-->
 </body>
 
 </html>
