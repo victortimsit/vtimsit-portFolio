@@ -72,6 +72,7 @@ class Slider {
             this.$contactBulleted.classList.add('navigationMenu__bulleted')
             this.$contactBulleted.classList.remove('navigationMenu__bulleted--active')
 
+            this.$slides[1].classList.add('slide--bottom')
             this.$slides[0].classList.remove('slide--top')
         })
 
@@ -111,6 +112,7 @@ class Slider {
             this.$contactBulleted.classList.remove('navigationMenu__bulleted--active')
 
             this.$slides[0].classList.add('slide--top')
+            this.$slides[1].classList.remove('slide--bottom')
 
         })
 
