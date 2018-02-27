@@ -10,10 +10,12 @@ class Slider {
         this.$contactBulleted = document.querySelector('.navigationMenu__contact__bulleted')
 
         this.$slides = document.querySelectorAll('.js-slide')
+        this.$spheres = document.querySelectorAll('.sphere')
 
         this.work = true
         this.aboutMe = false
         this.contact = false
+        this.transition = false
 
         for (const $navigationMenuItem of this.$navigationMenuItems) {
             // Scale effect on mouseover
@@ -37,6 +39,15 @@ class Slider {
             this.work = true
             this.aboutMe = false
             this.contact = false
+
+            // Disable transition delay after slide transition
+            for(const sphere of this.$spheres) {
+                // sphere.style.display = 'block'
+                setTimeout(() => {
+                    sphere.classList.remove('slider__element')
+                    sphere.classList.add('js-cursor-parallax')
+                }, 1300)
+            }
 
             // Work
             this.$work.classList.add('navigationMenu__item--active')
@@ -71,6 +82,14 @@ class Slider {
             this.aboutMe = true
             this.contact = false
 
+            // Able transition delay before slide transition
+            for(const sphere of this.$spheres) {
+                sphere.classList.remove('js-cursor-parallax')
+                sphere.classList.add('slider__element')
+                setTimeout(() => {
+                    // sphere.style.display = 'none'
+                }, 1300)
+            }
             // Work
             this.$work.classList.add('navigationMenu__item')
             this.$work.classList.remove('navigationMenu__item--active')
@@ -96,6 +115,7 @@ class Slider {
             this.$contactBulleted.classList.remove('navigationMenu__bulleted--active')
 
             this.$slides[0].classList.add('slide--top')
+
         })
 
         // Update style when mousedown on contact

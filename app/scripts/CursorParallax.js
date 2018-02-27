@@ -1,8 +1,20 @@
 class CursorParallax {
     constructor() {
+        this.$navigationMenuItem = document.querySelectorAll('.navigationMenu__item')
+
         this.setItems()
         this.setMouse()
         this.setRequestAnimationFrame()
+
+        // Reset items after slide transition
+        for (const $navigationMenuItem of this.$navigationMenuItem) {
+            $navigationMenuItem.addEventListener('mousedown', () => {
+                // this.setItems()
+                setTimeout(() => {
+                    this.setItems()
+                }, 1300)
+            })
+        }
     }
 
     setItems() {
@@ -10,7 +22,7 @@ class CursorParallax {
 
         this.items = []
 
-        for(const $element of $elements) {
+        for (const $element of $elements) {
             const item = {}
             item.$element = $element
             item.offsetX = 0
@@ -47,16 +59,20 @@ class CursorParallax {
         const loop = () => {
             window.requestAnimationFrame(loop)
 
-            for(const item of this.items) {
+            // this.setItems()
+            for (const item of this.items) {
                 const offsetX = - this.mouse.x * 100 * item.amplitude
                 const offsetY = - this.mouse.y * 100 * item.amplitude
 
                 // Easing
-                item.offsetY += (offsetY - item.offsetY) * 0.05
-                item.offsetX += (offsetX - item.offsetX) * 0.05
-                
+                // item.offsetY += (offsetY - item.offsetY) * 0.05
+                // item.offsetX += (offsetX - item.offsetX) * 0.05
+
+                item.offsetY += (offsetY - item.offsetY)
+                item.offsetX += (offsetX - item.offsetX)
+
                 const roundedOffsetX = Math.round(item.offsetX * 100) / 100
-                const roundedOffsetY = Math.round(item.offsetY * 100) / 100 
+                const roundedOffsetY = Math.round(item.offsetY * 100) / 100
 
                 item.$element.style.transform = `translateX(${roundedOffsetX}px) translateY(${roundedOffsetY}px)`
             }
