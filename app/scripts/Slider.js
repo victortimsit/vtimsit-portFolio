@@ -40,13 +40,20 @@ class Slider {
             this.aboutMe = false
             this.contact = false
 
+            // Able transition delay before slide transition
+            for(let i = 5; i < 10; i++) {
+                this.$spheres[i].classList.add('slider__element')
+                this.$spheres[i].classList.remove('js-cursor-parallax')
+            }
+
             // Disable transition delay after slide transition
-            for(const sphere of this.$spheres) {
+            for(let i = 0; i < 5; i++) {
                 setTimeout(() => {
-                    sphere.classList.remove('slider__element')
-                    sphere.classList.add('js-cursor-parallax')
+                    this.$spheres[i].classList.remove('slider__element')
+                    this.$spheres[i].classList.add('js-cursor-parallax')
                 }, 1300)
             }
+
 
             // Work
             this.$work.classList.add('navigationMenu__item--active')
@@ -83,10 +90,21 @@ class Slider {
             this.contact = false
 
             // Able transition delay before slide transition
-            for(const sphere of this.$spheres) {
-                sphere.classList.remove('js-cursor-parallax')
-                sphere.classList.add('slider__element')
+            for(let i = 0; i < 5; i++) {
+                this.$spheres[i].classList.remove('js-cursor-parallax')
+                this.$spheres[i].classList.add('slider__element')
             }
+            
+            // Disable transition delay after slide transition
+            for(let i = 5; i < 10; i++) {
+
+                setTimeout(() => {
+                    this.$spheres[i].classList.remove('slider__element')
+                    this.$spheres[i].classList.add('js-cursor-parallax')
+                }, 1300)
+            }
+
+
             // Work
             this.$work.classList.add('navigationMenu__item')
             this.$work.classList.remove('navigationMenu__item--active')
