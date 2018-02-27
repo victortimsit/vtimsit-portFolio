@@ -1,0 +1,24 @@
+.aboutMeBlock {
+  display: block;
+  float: left;
+  border-radius: 20px;
+  background-color: #fafafa;
+}
+.description {
+  width: 40vw;
+  height: 40vw;
+  margin-right: 0.5vw;
+}
+.picture {
+  width: 12vw;
+  height: 12vw;
+  margin-left: 0.5vw;
+  margin-bottom: 0.5vw;
+  position: relative;
+}
+.skills {
+  width: 27vw;
+  height: 27vw;
+  margin-left: 0.5vw;
+  margin-top: 0.5vw;
+}

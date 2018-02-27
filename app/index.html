@@ -12,10 +12,12 @@
   <link type="text/css" rel="stylesheet" href="styles/css/layout/spheres.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/layout/alerts.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/layout/slider.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/layout/aboutMe.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/sliderCubeElement.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/navigationElement.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/alertsElement.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/sliderElement.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/module/aboutMeElement.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/sliderCubeActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/navigationActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/alertsActive.css" />
@@ -39,14 +41,15 @@
       </li>
     </ul>
   </div>
+
   <!--Work page-->
   <div class="page js-slide">
-    <div class="sphere sphere_1 js-cursor-parallax apparition-delay-4" data-amplitude="1.0"></div>
-    <div class="sphere sphere_2 js-cursor-parallax apparition-delay-1" data-amplitude="0.8"></div>
-    <div class="sphere sphere_3 js-cursor-parallax apparition-delay-2" data-amplitude="0.6"></div>
-    <div class="sphere sphere_4 js-cursor-parallax" data-amplitude="0.4"></div>
-    <div class="sphere sphere_5 js-cursor-parallax apparition-delay-3" data-amplitude="0.2"></div>
-    <div class="container slider__element apparition-delay-5">
+    <div class="sphere workPage__sphere_1 js-cursor-parallax apparition-delay-4" data-amplitude="1.0"></div>
+    <div class="sphere workPage__sphere_2 js-cursor-parallax apparition-delay-1" data-amplitude="0.8"></div>
+    <div class="sphere workPage__sphere_3 js-cursor-parallax apparition-delay-2" data-amplitude="0.6"></div>
+    <div class="sphere workPage__sphere_4 js-cursor-parallax" data-amplitude="0.4"></div>
+    <div class="sphere workPage__sphere_5 js-cursor-parallax apparition-delay-3" data-amplitude="0.2"></div>
+    <div class="container perspective slider__element apparition-delay-5">
       <div class="cubeSlider cubeSlider_1">
         <div class="cubeSlider__item cubeSlider_1__item">
           <img class="cubeSlider_1__item__preview" src="assets/images/sliderPreviews/01_homepage@1x.png" alt="mk2 redesign homepage">
@@ -187,6 +190,31 @@
     </div>
   </div>
   <!--End work page-->
+  <div class="page js-slide slide--bottom">
+      <div class="sphere aboutMePage__sphere_1 js-cursor-parallax slider__element apparition-delay-4" data-amplitude="0.6"></div>
+      <div class="sphere aboutMePage__sphere_2 js-cursor-parallax slider__element apparition-delay-1" data-amplitude="1.2"></div>
+      <div class="sphere aboutMePage__sphere_3 js-cursor-parallax slider__element apparition-delay-2" data-amplitude="0.6"></div>
+      <div class="sphere aboutMePage__sphere_4 js-cursor-parallax slider__element" data-amplitude="0.2"></div>
+      <div class="sphere aboutMePage__sphere_5 js-cursor-parallax slider__element apparition-delay-3" data-amplitude="0.4"></div>
+    <div class="container slider__element apparition-delay-5">
+      <div class="aboutMeBlock description">
+        <h1>Hello there,</h1>
+        <p>I’m Victor, student from HETIC school based in France. </p>
+        <p>I am currently in 2nd year of study. I pationne for the world of the web in particular in web development but also interface and graphic design.  </p>
+        <div class="description__resume">
+          <img class="description__resume__img" src="assets/images/aboutMe/CV_preview.png" alt="CV - Resume">
+        </div>
+        <a class="description__button" href="#">Download my resume</a>
+      </div>
+      <div class="aboutMeBlock picture">
+        <img class="picture__img" src="assets/images/aboutMe/auto-portrait.png" alt="auto-portract">
+      </div>
+      <div class="aboutMeBlock skills"></div>
+    </div>
+  </div>
+  <!--About me page-->
+
+  <!--End about me page-->
   <!--Build:js scripts/main.min.js -->
   <script src="scripts/libraries/three.min.js"></script>
   <script src="scripts/SceneWebGl.js"></script>

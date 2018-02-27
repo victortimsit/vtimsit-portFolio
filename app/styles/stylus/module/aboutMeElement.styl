@@ -1,0 +1,51 @@
+.description__resume
+    width 15vw
+    height 20vw
+    margin 0 auto
+
+    box-shadow -10px 24px 38px 3px rgba(0, 0, 0, 0.14), -10px 9px 46px 8px rgba(0, 0, 0, 0.12), -10px 11px 15px 0px rgba(0, 0, 0, 0.20)
+    perspective 0px
+    transform rotateX(60deg) rotateY(0deg) rotateZ(-45deg)
+    animation-name pulse
+    animation-duration 1s
+    animation-timing-function ease-in-out
+    animation-iteration-count infinite
+    animation-direction alternate
+
+.description__resume__img
+    width 15vw
+    height 20vw
+    transform rotateZ(0deg)
+
+.description__button
+    width 150px
+    padding 15px 40px 15px 40px
+    margin 0 auto
+    display block
+    border-radius 25px
+    color #ffffff
+    background #4A90E2
+    transition background 150ms ease, transform 150ms
+    &:hover
+        background #F9838E
+    &:active
+        transform scale(0.9)
+
+.picture__img   
+    height auto
+    width 100%
+    position absolute
+    margin 0 auto
+    
+    bottom 0px
+
+    border-radius 20px
+
+
+$keyframes-name = pulse
+@keyframes {$keyframes-name}
+    for i in 0..1
+        {100% * i}
+            transform  rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translateZ(i * 50px)
+            box-shadow -10 - (i * 50)px (i * 50) + 24px 38px 3 + (i * 20)px rgba(0, 0, 0, 0.14 - (i * 0.10)), -10 - (i * 50)px (i * 50) + 9px 46 + (i * 20)px 8 + (i * 15)px rgba(0, 0, 0, 0.12  - (i * 0.10)), -10 - (i * 50)px (i * 50) + 11px 15 + (i * 20)px 0 + (i * 15)px rgba(0, 0, 0, 0.20  - (i * 0.10))
+
