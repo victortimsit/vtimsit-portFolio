@@ -5,20 +5,20 @@
   background-color: #fafafa;
 }
 .description {
-  width: 40vw;
-  height: 40vw;
-  margin-right: 0.5vw;
+  width: 540px;
+  height: 540px;
+  margin-right: 10px;
 }
 .picture {
-  width: 12vw;
-  height: 12vw;
-  margin-left: 0.5vw;
-  margin-bottom: 0.5vw;
+  width: 160px;
+  height: 160px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   position: relative;
 }
 .skills {
-  width: 27vw;
-  height: 27vw;
-  margin-left: 0.5vw;
-  margin-top: 0.5vw;
+  width: 360px;
+  height: 360px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
