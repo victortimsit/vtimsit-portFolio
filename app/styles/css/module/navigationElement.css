@@ -11,3 +11,9 @@
   background-color: #d0d0d0;
   transform: translateY(-100%);
 }
+@media screen and (max-width: 1200px) {
+  .navigationMenu__bulleted {
+    width: 20px;
+    height: 3px;
+  }
+}

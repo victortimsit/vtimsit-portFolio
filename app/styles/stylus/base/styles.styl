@@ -1,3 +1,5 @@
+@import '../tools/breakpoints.styl'
+
 body
     margin 0
     overflow hidden 
@@ -10,6 +12,9 @@ h1
 
     font-family signikaBold
     font-size 34px
+    @media screen and (max-width: $medium-desktop)
+        font-size 27px
+        margin-bottom 8px
 
 h2  
     margin 0px 30px 5px 30px
@@ -17,6 +22,9 @@ h2
     font-family signikaBold
     font-size 18px
     color #4A90E2
+    @media screen and (max-width: $medium-desktop)
+        font-size 14px
+        margin-bottom 4px
 
 h3
     position absolute
@@ -44,11 +52,17 @@ li
     list-style none
     cursor pointer
     user-select: none
+    @media screen and (max-width: $medium-desktop)
+        font-size 18px
+        margin-bottom 8px
 
 p
     margin 0px 30px 15px 30px
 
     font-size 16px
+    @media screen and (max-width: $medium-desktop)
+        font-size 13px
+        margin-bottom 12px
 
 a
     color #4A90E2

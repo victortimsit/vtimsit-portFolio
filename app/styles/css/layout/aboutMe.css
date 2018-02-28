@@ -9,6 +9,12 @@
   height: 540px;
   margin-right: 10px;
 }
+@media screen and (max-width: 1200px) {
+  .description {
+    width: 432px;
+    height: 432px;
+  }
+}
 .picture {
   width: 160px;
   height: 160px;
@@ -16,9 +22,21 @@
   margin-bottom: 10px;
   position: relative;
 }
+@media screen and (max-width: 1200px) {
+  .picture {
+    width: 124px;
+    height: 124px;
+  }
+}
 .skills {
   width: 360px;
   height: 360px;
   margin-left: 10px;
   margin-top: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .skills {
+    width: 288px;
+    height: 288px;
+  }
 }

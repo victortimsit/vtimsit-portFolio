@@ -16,6 +16,12 @@
 .cubeSlider_2__item__discover {
   float: right;
   margin-right: 30px;
+  font-size: 14px;
+}
+@media screen and (max-width: 1200px) {
+  .cubeSlider_2__item__discover {
+    font-size: 11px;
+  }
 }
 .cubeSlider_3__item {
   display: flex;

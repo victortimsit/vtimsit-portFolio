@@ -1,3 +1,5 @@
+@import '../tools/breakpoints.styl'
+
 .aboutMeBlock
     display block
     float left
@@ -10,6 +12,9 @@
     width 540px
     height 540px
     margin-right 10px
+    @media screen and (max-width: $medium-desktop)
+        width 432px
+        height 432px
 
 .picture
     width 160px
@@ -17,6 +22,9 @@
     margin-left 10px
     margin-bottom 10px
     position relative
+    @media screen and (max-width: $medium-desktop)
+        width 124px
+        height 124px
 
 
 .skills 
@@ -24,3 +32,6 @@
     height 360px
     margin-left 10px
     margin-top 10px
+    @media screen and (max-width: $medium-desktop)
+        width 288px
+        height 288px
