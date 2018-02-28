@@ -40,6 +40,18 @@
   bottom: 0px;
   border-radius: 20px;
 }
+.aboutMeBlock__software {
+  width: 23vw;
+  height: 2.5vw;
+  margin: 1.7vw 0 0 30px;
+}
+.aboutMeBlock__software__img {
+  height: 100%;
+}
+.aboutMeBlock__software:nth-child(5) .aboutMeBlock__software__img,
+.aboutMeBlock__software:nth-child(6) .aboutMeBlock__software__img {
+  margin-left: 0.35vw;
+}
 @-moz-keyframes pulse {
   0% {
     transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translateZ(0px);
