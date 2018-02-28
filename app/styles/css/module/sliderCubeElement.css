@@ -13,6 +13,10 @@
 .cubeSlider_1__item__preview {
   width: 100%;
 }
+.cubeSlider_2__item__discover {
+  float: right;
+  margin-right: 30px;
+}
 .cubeSlider_3__item {
   display: flex;
   text-align: center;
