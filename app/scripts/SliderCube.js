@@ -1,9 +1,7 @@
 class SliderCube {
-    constructor(sliderName__item, slideWidth, slideHeight, rotationY, rotationX) {
+    constructor(sliderName__item, rotationY, rotationX) {
         // Set properties
         this.sliderName__item = sliderName__item
-        this.slideWidth = slideWidth
-        this.slideHeight = slideHeight
         this.rotation = {
             yPos: rotationY,
             yNeg: (-1) * rotationY,
@@ -23,14 +21,14 @@ class SliderCube {
 
         // Add slide style
         for (const $slide of this.$slides) {
-            $slide.style.width = `${this.slideWidth}vw` // Set slide width
-            $slide.style.height = `${this.slideHeight}vw` // Set slide height
+            // $slide.style.width = `${this.slideWidth}vw` // Set slide width
+            // $slide.style.height = `${this.slideHeight}vw` // Set slide height
 
             // $slide.style.left = `${- this.slideWidth / 2}px` // Set slide left
             // $slide.style.top = `${- this.slideHeight / 2}px` // Set slide top
 
             $slide.style.opacity = 0
-            $slide.style.transformOrigin = `50% 50% ${-this.slideWidth / 2}vw`
+            $slide.style.transformOrigin = `50% 50% ${-$slide.offsetWidth / 2}px`
             $slide.style.transform = `rotateY(${this.rotation.yPos}deg)  rotateX(${this.rotation.xPos}deg)` // Set slide transformations
         }
 
