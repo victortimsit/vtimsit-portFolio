@@ -1,7 +1,10 @@
+@import '../tools/breakpoints.styl'
+
 .description__resume
-    width 15vw
-    height 20vw
+    width 180px
+    height 267px
     margin 0 auto
+    margin-top 0px
 
     box-shadow -10px 24px 38px 3px rgba(0, 0, 0, 0.14), -10px 9px 46px 8px rgba(0, 0, 0, 0.12), -10px 11px 15px 0px rgba(0, 0, 0, 0.20)
     perspective 0px
@@ -11,16 +14,23 @@
     animation-timing-function ease-in-out
     animation-iteration-count infinite
     animation-direction alternate
+    @media screen and (max-width: $medium-desktop)
+        width 144px
+        height 214px
 
 .description__resume__img
-    width 15vw
-    height 20vw
+    width 180px
+    height 267px
     transform rotateZ(0deg)
+    @media screen and (max-width: $medium-desktop)
+        width 144px
+        height 214px
 
 .description__button
     width 150px
     padding 15px 40px 15px 40px
     margin 0 auto
+    margin-top 11px
     display block
     border-radius 25px
     color #ffffff
@@ -30,6 +40,8 @@
         background #F9838E
     &:active
         transform scale(0.9)
+    @media screen and (max-width: $medium-desktop)
+        margin-top 0px
 
 .picture__img   
     height auto
@@ -42,17 +54,28 @@
     border-radius 20px
 
 .aboutMeBlock__software
-    width 23vw
-    height 2.5vw
-    margin 1.7vw 0 0 30px
+    width 280px
+    height 33px
+    margin 20px 0 0 30px
     // background red
+    @media screen and (max-width: $medium-desktop)
+        width 244px
+        height 26px
+        margin 16px 0 0 30px
+
+.aboutMeBlock__software:nth-child(1)
+    margin-top 30px
+    @media screen and (max-width: $medium-desktop)
+        margin-top 24px
 
 .aboutMeBlock__software__img
     height 100%
     
 .aboutMeBlock__software:nth-child(5) .aboutMeBlock__software__img
 .aboutMeBlock__software:nth-child(6) .aboutMeBlock__software__img
-    margin-left 0.35vw
+    margin-left 5px
+    @media screen and (max-width: $medium-desktop)
+        margin-left 4px
 
     
 $keyframes-name = pulse

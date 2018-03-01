@@ -1,3 +1,5 @@
+@import '../tools/breakpoints.styl'
+
 .navigationMenu__item
     color #d0d0d0
     transition 150ms ease
@@ -12,3 +14,6 @@
     background-color #d0d0d0
 
     transform translateY(-100%)
+    @media screen and (max-width: $medium-desktop)
+        width 20px
+        height 3px

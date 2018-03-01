@@ -11,3 +11,9 @@
   background: linear-gradient(to left, #fdbc5d 20%, #fa709a 125%);
   transform: translateY(-100%);
 }
+@media screen and (max-width: 1200px) {
+  .navigationMenu__bulleted--active {
+    width: 20px;
+    height: 3px;
+  }
+}

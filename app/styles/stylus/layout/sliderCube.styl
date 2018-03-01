@@ -1,3 +1,5 @@
+@import '../tools/breakpoints.styl'
+
 .container
   width 920px
   height 540px
@@ -9,6 +11,12 @@
 
   transform translateX(-50%) translateY(-50%)
   z-index 8
+  @media screen and (max-width: $medium-desktop)
+    width 740px
+    height 432px
+  @media screen and (max-width: $large-tablet)
+    width 432px
+    height 740px
   
 .perspective
   perspective 800px
@@ -26,14 +34,27 @@
   height 540px
   margin-right 10px
   margin-bottom 20px
+  @media screen and (max-width: $medium-desktop)
+    width 432px
+    height 432px
   
 .cubeSlider_2
   width 360px
   height 360px
   margin-left 10px
   margin-bottom 20px
+  @media screen and (max-width: $medium-desktop)
+    width 288px
+    height 288px
+  @media screen and (max-width: $large-tablet)
+    margin-left 0px
 
 .cubeSlider_3
   width 160px
   height 160px
   margin-left 10px
+  @media screen and (max-width: $medium-desktop)
+    width 124px
+    height 124px
+  @media screen and (max-width: $large-tablet)
+    margin-left 20px
