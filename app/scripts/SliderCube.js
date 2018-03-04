@@ -16,6 +16,9 @@ class SliderCube {
         this.$firstProject = document.querySelector('.alerts__firstProject')
         this.$lastProject = document.querySelector('.alerts__lastProject')
 
+        // Blur effect DOM elements
+        this.$discoverProjects = document.querySelectorAll('.cubeSlider_2__item__discover')
+
         // Set counter
         this.slidesNumber = 1
 
@@ -69,6 +72,13 @@ class SliderCube {
                         this.$firstProject.classList.remove('alerts__Project--active')
                     }, 300)
                 }
+            })
+        }
+
+        for(const $discoverProject of this.$discoverProjects) {
+
+            $discoverProject.addEventListener('mousedown', () => {
+                
             })
         }
     }

@@ -13,6 +13,7 @@
   <link type="text/css" rel="stylesheet" href="styles/css/layout/alerts.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/layout/slider.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/layout/aboutMe.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/layout/discoverProject.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/sliderCubeElement.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/navigationElement.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/module/alertsElement.css" />
@@ -22,13 +23,14 @@
   <link type="text/css" rel="stylesheet" href="styles/css/state/navigationActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/alertsActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/sliderActive.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/state/blur.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/tools/fonts.css" />
   <!--endbuild-->
 </head>
 
 <body>
-  <h3>v.timsit</h3>
   <div class="navigationMenu">
+    <h3>v.timsit</h3>
     <ul>
       <li class="navigationMenu__work navigationMenu__item navigationMenu__item--active">Work
         <div class="navigationMenu__work__bulleted navigationMenu__bulleted--active"></div>
@@ -77,7 +79,7 @@
           </p>
           <h2>Role</h2>
           <p>Lead designer</p>
-          <a class="cubeSlider_2__item__discover" href="#">+ Discover project</a>
+          <a class="cubeSlider_2__item__discover" href="#project_mk2--visible">+ Discover project</a>
         </div>
         <div class="cubeSlider__item cubeSlider_2__item">
           <h1>Design</h1>
@@ -89,7 +91,7 @@
           </p>
           <h2>Role</h2>
           <p>Lead designer</p>
-          <a class="cubeSlider_2__item__discover" href="#">+ Discover project</a>
+          <a class="cubeSlider_2__item__discover" href="#project_2--visible">+ Discover project</a>
         </div>
         <div class="cubeSlider__item cubeSlider_2__item">
           <h1>Design</h1>
@@ -271,8 +273,18 @@
       Last project !
     </div>
   </div>
-
-
+  <!--Discover project-1 popin-->
+  <div class="page discoverProject" id="project_mk2--visible">
+    <div class="presentationBlock">
+      <h1>Project 1</h1>
+    </div>
+  </div>
+  <div class="page discoverProject" id="project_2--visible">
+    <div class="presentationBlock">
+      <h1>Project 2</h1>
+    </div>
+  </div>
+  <!--End discover project-1 popin-->
   <!--Build:js scripts/main.min.js -->
   <script src="scripts/libraries/three.min.js"></script>
   <script src="scripts/SceneWebGl.js"></script>

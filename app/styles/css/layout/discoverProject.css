@@ -1,0 +1,31 @@
+.discoverProject {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url("../../../assets/images/projects/projectMk2/blurBackground.jpg");
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 20;
+  overflow-y: scroll;
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms ease;
+}
+.discoverProject:target {
+  opacity: 1;
+  visibility: visible;
+}
+.presentationBlock {
+  width: 920px;
+  height: 940px;
+  margin: 0 auto;
+  position: absolute;
+  left: 52%;
+  top: 13%;
+  background-color: #fafafa;
+  border-radius: 20px;
+  transform: translateX(-50%) translateY(0%);
+  z-index: 8;
+}
