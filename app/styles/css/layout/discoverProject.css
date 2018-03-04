@@ -21,6 +21,7 @@
 .presentationBlock {
   width: 920px;
   margin: 0 auto;
+  margin-bottom: 80px;
   position: absolute;
   left: 52%;
   top: 13%;

@@ -1,6 +1,28 @@
 .discoverProject:target .presentationBlock {
   transform: translateX(-50%) translateY(0%) scale(1);
 }
+.discoverProject__return {
+  width: 80px;
+  height: 80px;
+  margin-left: 100px;
+  margin-top: 120px;
+  position: sticky;
+  top: 30px;
+}
+.discoverProject__return__img {
+  width: 100%;
+  opacity: 0.8;
+  transition: transform 150ms ease, opacity 150ms ease;
+  will-change: transform;
+}
+.discoverProject__return:hover .discoverProject__return__img {
+  opacity: 0.4;
+  transform: scale(1.1);
+}
+.discoverProject__return:active .discoverProject__return__img {
+  opacity: 1;
+  transform: scale(0.8);
+}
 .presentationBlock__title {
   width: 200px;
   margin: 0 auto;
@@ -26,7 +48,14 @@
   margin-left: 0px;
   font-size: 30px;
 }
+.presentationBlock__title__h4 {
+  font-size: 18px;
+  color: #9d9d9d;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
 .presentationBlock__title__p {
+  margin-top: 14px;
   text-align: center;
 }
 .presentationBlock__element {
@@ -35,13 +64,19 @@
 }
 .presentationBlock__preview--isometric {
   margin: 0 auto;
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translateZ(40px);
+}
+.presentationBlock__preview {
+  width: 800px;
+  height: 424px;
+  overflow: hidden;
 }
 .presentationBlock__preview__img {
   box-shadow: -10px 24px 38px 3px rgba(0,0,0,0.14), -10px 9px 46px 8px rgba(0,0,0,0.12), -10px 11px 15px 0px rgba(0,0,0,0.2);
 }
 .presentationBlock__originalSite__preview {
-  width: 500px;
+  width: 620px;
+  margin-right: 50px;
 }
 .presentationBlock__originalSite__preview__img {
   width: 300px;
@@ -80,4 +115,104 @@
 }
 .presentationBlock__wireframes__preview__img:nth-child(2) {
   position: absolute;
+}
+.presentationBlock__element__visualIdentity__colors {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.presentationBlock__element__visualIdentity__color {
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+}
+.presentationBlock__element__visualIdentity__colorsCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  background-color: #111;
+  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.5);
+}
+.presentationBlock__element__visualIdentity__colorName {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  font-family: signikaBold;
+  font-size: 20px;
+}
+.presentationBlock__element__visualIdentity__colorHexa {
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 14px;
+}
+.presentationBlock__element__visualIdentity__colorCircle--red {
+  background-color: #c9080b;
+}
+.presentationBlock__element__visualIdentity__colorCircle--grey {
+  background-color: #9b9b9b;
+}
+.presentationBlock__element__visualIdentity__colorCircle--white {
+  background-color: #fafafa;
+}
+.presentationBlock__element__visualIdentity__fonts {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.presentationBlock__element__visualIdentity__font {
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+}
+.presentationBlock__element__visualIdentity__fontPreview {
+  font-size: 34px;
+  margin-bottom: 0px;
+}
+.presentationBlock__element__visualIdentity__fontName {
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 20px;
+}
+.presentationBlock__element__visualIdentity__fontPreview--bold {
+  font-family: signikaBold;
+}
+.presentationBlock__element__visualIdentity__titles {
+  width: 800px;
+  margin-top: 30px;
+}
+.presentationBlock__element__visualIdentity__title {
+  width: auto;
+  margin-bottom: 30px;
+}
+.presentationBlock__element__visualIdentity__titleType {
+  font-family: signikaBold;
+  margin-bottom: 6px;
+}
+.presentationBlock__element__visualIdentity__titlePreview {
+  margin-bottom: 6px;
+  font-family: signikaBold;
+}
+.presentationBlock__element__visualIdentity__titlePreview--1 {
+  font-size: 36px;
+}
+.presentationBlock__element__visualIdentity__titleInfo {
+  margin-top: 0px;
+}
+.presentationBlock__element__visualIdentity__titlePreview--2 {
+  font-size: 24px;
+}
+.presentationBlock__element__visualIdentity__titlePreview--3 {
+  font-size: 22px;
+}
+.presentationBlock__element__mockUps__img {
+  width: 100%;
+  box-shadow: 0px 23px 38px 4px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12), 0px 11px 15px 0px rgba(0,0,0,0.2);
+}
+.presentationBlock__element__mockUps__img:nth-last-child(1) {
+  margin-bottom: 80px;
 }

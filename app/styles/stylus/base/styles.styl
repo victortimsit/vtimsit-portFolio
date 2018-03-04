@@ -68,7 +68,14 @@ a
     color #4A90E2
 
     text-decoration none
-
+    transition opacity 150ms ease, transform 150ms ease
+    &:hover
+        transform scale(1.1)
+        opacity 0.8
+    &:active
+        transform scale(0.9)
+        opacity 1
+        
 ::selection
     background-color #FA709A
     color black
