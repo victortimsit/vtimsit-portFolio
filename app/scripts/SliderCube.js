@@ -25,8 +25,8 @@ class SliderCube {
         // Add slide style
         for (const $slide of this.$slides) {
             $slide.style.opacity = 0
-            $slide.style.transformOrigin = `50% 50% ${-$slide.offsetWidth / 2}px`
-            $slide.style.transform = `rotateY(${this.rotation.yPos}deg)  rotateX(${this.rotation.xPos}deg)` // Set slide transformations
+            $slide.style.WebkitTransformOrigin = `50% 50% ${-$slide.offsetWidth / 2}px`
+            $slide.style.WebkitTransform = `rotateY(${this.rotation.yPos}deg)  rotateX(${this.rotation.xPos}deg)` // Set slide transformations
         }
 
         // First slide visible 

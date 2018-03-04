@@ -4,6 +4,7 @@
 // cube.animate()
 
 const wavesCanvas = new WavesCanvas(100, 100, 6000)
+const wavesCanvasProject = new WavesCanvasProject(100, 100, 6000)
 
 const slider = new SliderCube('.cubeSlider_1__item', 90, 0)
 const slider_2 = new SliderCube('.cubeSlider_2__item', 0, -90)
