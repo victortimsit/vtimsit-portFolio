@@ -16,14 +16,17 @@ class SliderCube {
         this.$firstProject = document.querySelector('.alerts__firstProject')
         this.$lastProject = document.querySelector('.alerts__lastProject')
 
+        // Blur effect DOM elements
+        this.$discoverProjects = document.querySelectorAll('.cubeSlider_2__item__discover')
+
         // Set counter
         this.slidesNumber = 1
 
         // Add slide style
         for (const $slide of this.$slides) {
             $slide.style.opacity = 0
-            $slide.style.transformOrigin = `50% 50% ${-$slide.offsetWidth / 2}px`
-            $slide.style.transform = `rotateY(${this.rotation.yPos}deg)  rotateX(${this.rotation.xPos}deg)` // Set slide transformations
+            $slide.style.WebkitTransformOrigin = `50% 50% ${-$slide.offsetWidth / 2}px`
+            $slide.style.WebkitTransform = `rotateY(${this.rotation.yPos}deg)  rotateX(${this.rotation.xPos}deg)` // Set slide transformations
         }
 
         // First slide visible 
@@ -69,6 +72,13 @@ class SliderCube {
                         this.$firstProject.classList.remove('alerts__Project--active')
                     }, 300)
                 }
+            })
+        }
+
+        for(const $discoverProject of this.$discoverProjects) {
+
+            $discoverProject.addEventListener('mousedown', () => {
+                
             })
         }
     }

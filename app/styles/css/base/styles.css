@@ -68,6 +68,15 @@ p {
 a {
   color: #4a90e2;
   text-decoration: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+a:active {
+  transform: scale(0.9);
+  opacity: 1;
 }
 ::selection {
   background-color: #fa709a;
