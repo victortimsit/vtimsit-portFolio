@@ -12,3 +12,5 @@ const slider_3 = new SliderCube('.cubeSlider_3__item', -90, 0)
 
 const pagesSlider = new Slider()
 const cursorParallax = new CursorParallax()
+
+const lazyLoading = new LazyLoading('--lazyLoad', '--loaded')

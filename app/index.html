@@ -24,6 +24,7 @@
   <link type="text/css" rel="stylesheet" href="styles/css/state/navigationActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/alertsActive.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/sliderActive.css" />
+  <link type="text/css" rel="stylesheet" href="styles/css/state/lazyLoading.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/state/blur.css" />
   <link type="text/css" rel="stylesheet" href="styles/css/tools/fonts.css" />
   <!--endbuild-->
@@ -55,7 +56,7 @@
     <div class="container perspective slider__element apparition-delay-5">
       <div class="cubeSlider cubeSlider_1">
         <div class="cubeSlider__item cubeSlider_1__item">
-          <img class="cubeSlider_1__item__preview" src="assets/images/sliderPreviews/01_homepage@1x.png" alt="mk2 redesign homepage">
+          <img class="cubeSlider_1__item__preview --lazyLoad" src="assets/images/sliderPreviews/01_homepage@1x.png" alt="mk2 redesign homepage">
         </div>
         <div class="cubeSlider__item cubeSlider_1__item">
         </div>
@@ -206,12 +207,12 @@
         <p>I am currently in 2nd year of study. I pationne for the world of the web in particular in web development but also
           interface and graphic design. </p>
         <div class="description__resume">
-          <img class="description__resume__img" src="assets/images/aboutMe/CV_preview.png" alt="CV - Resume">
+          <img class="description__resume__img" src="assets/images/aboutMe/CV_preview-light.png" alt="CV - Resume">
         </div>
         <a class="description__button" href="#">Download my resume</a>
       </div>
       <div class="aboutMeBlock picture">
-        <img class="picture__img" src="assets/images/aboutMe/auto-portrait.png" alt="auto-portract">
+        <img class="picture__img" src="assets/images/aboutMe/auto-portrait-light.png" alt="auto-portract">
       </div>
       <div class="aboutMeBlock skills">
         <div class="aboutMeBlock__software">
@@ -422,6 +423,7 @@
   <script src="scripts/Slider.js"></script>
   <script src="scripts/WavesCanvas.js"></script>
   <script src="scripts/WavesCanvasProject.js"></script>
+  <script src="scripts/LazyLoading.js"></script>
   <script src="scripts/script.js"></script>
   <!--Endbuild-->
 </body>
