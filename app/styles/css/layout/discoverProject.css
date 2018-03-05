@@ -45,3 +45,17 @@
     width: 432px;
   }
 }
+.presentationBlock__path {
+  position: absolute;
+}
+.presentationBlock__path:nth-child(2) {
+  top: 450px;
+  right: 0px;
+}
+.presentationBlock__path:nth-child(3) {
+  top: 1500px;
+}
+.presentationBlock__path:nth-child(4) {
+  width: 100%;
+  top: 3000px;
+}

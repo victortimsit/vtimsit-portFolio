@@ -5,7 +5,8 @@
   position: absolute;
   border-radius: 20px;
   background-color: #fafafa;
-  transition: transform 300ms ease, opacity 300ms ease, box-shadow 150ms ease;
+  opacity: 0;
+  transition: transform 300ms ease, opacity 300ms ease;
 }
 .cubeSlider_1__item {
   overflow: hidden;
