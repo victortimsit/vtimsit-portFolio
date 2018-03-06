@@ -1,5 +1,10 @@
+@import '../tools/breakpoints.styl'
+
 .page
   position absolute
 
   top 50%
   left 52%
+  @media screen and (max-width: $medium-tablet)
+        position initial
+        width 100vw

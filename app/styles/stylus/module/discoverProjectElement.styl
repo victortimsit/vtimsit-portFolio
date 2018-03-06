@@ -1,6 +1,10 @@
+@import '../tools/breakpoints.styl'
+
 // Target
 .discoverProject:target .presentationBlock
     transform translateX(-50%) translateY(0%)
+    @media screen and (max-width: $large-phone)
+        transform translateX(-50%) translateY(-2%)
 
 // Pages elements
 .discoverProject__return
@@ -10,6 +14,15 @@
     margin-top 120px
     position sticky
     top 30px
+    @media screen and (max-width: $medium-desktop)
+        margin-left 50px
+    @media screen and (max-width: $large-tablet)
+        margin-left 18px
+    @media screen and (max-width: $large-phone)
+        margin-top 0px
+        margin-left 37px
+        position fixed
+        top 20px
 
 .discoverProject__return__img
     width 100%
@@ -32,17 +45,27 @@
     margin-bottom 260px
     position relative
 
+    text-align center
+    @media screen and (max-width: $large-phone)
+        width 140px
+
 .presentationBlock__title__logo
     width 200px
+
+
 .presentationBlock__title__h1
     font-size 3.1rem
     margin 0
+    @media screen and (max-width: $large-phone)
+        font-size 2rem
 
 .presentationBlock__title__h2
     font-family signikaRegular
     margin 0
     margin-top 50px
     color #111111
+    @media screen and (max-width: $large-phone)
+        font-size 1rem
 
 .presentationBlock__title__h3
     position initial
@@ -65,6 +88,9 @@
     margin-left 70px
     margin-right 70px
     position relative
+    @media screen and (max-width: $large-tablet)
+        margin-left 30px
+        margin-right 30px
 
 .presentationBlock__preview--isometric
     margin 0 auto
@@ -74,7 +100,14 @@
 .presentationBlock__preview
     width 800px
     height 424px
-    overflow hidden
+    @media screen and (max-width: $medium-desktop)
+        width 600px
+    @media screen and (max-width: $large-tablet)
+        width 380px
+        height 220px
+        margin-top 50px
+        margin-bottom 30px
+        
 
 .presentationBlock__preview__img
     box-shadow -10px 24px 38px 3px rgba(0, 0, 0, 0.14), -10px 9px 46px 8px rgba(0, 0, 0, 0.12), -10px 11px 15px 0px rgba(0, 0, 0, 0.20)
@@ -83,9 +116,19 @@
 .presentationBlock__originalSite__preview
     width 620px
     margin-right 50px
+    @media screen and (max-width: $medium-desktop)
+        width 500px
+        margin-left 100px
+    @media screen and (max-width: $large-tablet)
+        width 380px
+        margin-left 36px
 
 .presentationBlock__originalSite__preview__img
     width 300px
+    @media screen and (max-width: $medium-desktop)
+        width 240px
+    @media screen and (max-width: $large-tablet)
+        width 170px
 
 .presentationBlock__originalSite__preview__img:nth-child(1)
     margin-right 20px
@@ -105,6 +148,13 @@
 
     text-shadow: 1px 1px 1px rgba(255,255,255,0.4)
     -webkit-background-clip text
+    @media screen and (max-width: $large-tablet)
+        margin-left 120px
+    @media screen and (max-width: $medium-tablet)
+        margin-left 60px
+    @media screen and (max-width: $large-phone)
+        margin-left 50%
+        transform translateX(-50%)
 
 .presentationBlock__goals__p
     width 150px
@@ -114,13 +164,30 @@
     display inline-block
 
     transform translateY(-40px)
+    @media screen and (max-width: $medium-desktop)
+        width 98px
+    @media screen and (max-width: $large-tablet)
+        width 200px
+    @media screen and (max-width: $large-phone)
+        margin-left 50%
+        transform translateX(-50%)
 
 // wireframes
 .presentationBlock__wireframes__preview
-    width 580px
+    width 540px
+    @media screen and (max-width: $medium-desktop)
+        width 500px
+        margin-left 60px
+    @media screen and (max-width: $large-tablet)
+        width 380px
+        margin-left 14px
 
 .presentationBlock__wireframes__preview__img
-    width 300px
+    width 280px
+    @media screen and (max-width: $medium-desktop)
+        width 240px
+    @media screen and (max-width: $large-tablet)
+        width 170px
 
 .presentationBlock__wireframes__preview__img:nth-child(1)
     margin-right 20px
@@ -135,12 +202,18 @@
     margin-top 55px
     display flex
     justify-content space-between
+    @media screen and (max-width: $large-tablet)
+        width 340px
 
 .presentationBlock__element__visualIdentity__color
     width 80px
     display inline-block
     
     text-align center
+    @media screen and (max-width: $large-tablet)
+        width 60px
+    @media screen and (max-width: $large-phone)
+        width 40px
 
 .presentationBlock__element__visualIdentity__colorsCircle
     width 80px
@@ -151,6 +224,13 @@
     background-color #111111
 
     box-shadow inset 0px 1px 3px 0px rgba(0, 0, 0, 0.5)
+    @media screen and (max-width: $large-tablet)
+        width 60px
+        height 60px
+        border-radius 30px
+    @media screen and (max-width: $large-phone)
+        width 40px
+        height 40px
 
 .presentationBlock__element__visualIdentity__colorName
     margin-left 0px
@@ -159,11 +239,15 @@
 
     font-family signikaBold
     font-size 20px
+    @media screen and (max-width: $large-phone)
+        font-size 16px
 
 .presentationBlock__element__visualIdentity__colorHexa
     margin-left 0px
     margin-right 0px
     font-size 14px
+    @media screen and (max-width: $large-phone)
+        font-size 10px
 
 .presentationBlock__element__visualIdentity__colorCircle--red
     background-color #C9080B
@@ -180,6 +264,10 @@
     margin-top 30px
     display flex
     justify-content space-between
+    @media screen and (max-width: $large-tablet)
+        width 340px
+    @media screen and (max-width: $large-phone)
+        width 240px
 
 .presentationBlock__element__visualIdentity__font
     width 150px
@@ -190,12 +278,16 @@
 .presentationBlock__element__visualIdentity__fontPreview
     font-size 34px
     margin-bottom 0px
+    @media screen and (max-width: $large-phone)
+        font-size 28px
 
 .presentationBlock__element__visualIdentity__fontName
     margin-left 0px
     margin-right 0px
 
     font-size 20px
+    @media screen and (max-width: $large-phone)
+        font-size 16px
 
 .presentationBlock__element__visualIdentity__fontPreview--bold
     font-family signikaBold
@@ -203,25 +295,35 @@
 .presentationBlock__element__visualIdentity__titles
     width 800px
     margin-top 30px
+    @media screen and (max-width: $large-tablet)
+        width 380px
 
 .presentationBlock__element__visualIdentity__title
     width auto
     margin-bottom 30px
+    @media screen and (max-width: $large-phone)
+        margin-left 0px
 
 .presentationBlock__element__visualIdentity__titleType
     font-family signikaBold
     margin-bottom 6px
+    @media screen and (max-width: $large-phone)
+        margin-left 0px
 
 .presentationBlock__element__visualIdentity__titlePreview
     margin-bottom 6px
 
     font-family signikaBold
+    @media screen and (max-width: $large-phone)
+        margin-left 0px
 
 .presentationBlock__element__visualIdentity__titlePreview--1
     font-size 36px
 
 .presentationBlock__element__visualIdentity__titleInfo
     margin-top 0px
+    @media screen and (max-width: $large-phone)
+        margin-left 0px
     
 .presentationBlock__element__visualIdentity__titlePreview--2
     font-size 24px

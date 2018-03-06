@@ -3,3 +3,9 @@
   top: 50%;
   left: 52%;
 }
+@media screen and (max-width: 768px) {
+  .page {
+    position: initial;
+    width: 100vw;
+  }
+}
