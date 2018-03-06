@@ -3,8 +3,8 @@
 .container
   width 920px
   height 540px
-  margin: 0 auto
-  position: absolute
+  margin 0 auto
+  position absolute
   
   top 50%
   left 50%
@@ -17,6 +17,12 @@
   @media screen and (max-width: $large-tablet)
     width 432px
     height 740px
+  @media screen and (max-width: $medium-tablet)
+    position initial
+    transform translateX(0%) translateY(0%)
+  @media screen and (max-width: $large-phone)
+    width 300px
+    height 550px
   
 .perspective
   perspective 800px
@@ -34,9 +40,19 @@
   height 540px
   margin-right 10px
   margin-bottom 20px
+
+  transition transform 150ms ease
+  cursor pointer
+  &:hover
+    transform scale(1.025)
+  &:active
+    transform scale(0.975)
+
   @media screen and (max-width: $medium-desktop)
     width 432px
     height 432px
+  @media screen and (max-width: $large-phone)
+    display none
   
 .cubeSlider_2
   width 360px
@@ -48,6 +64,9 @@
     height 288px
   @media screen and (max-width: $large-tablet)
     margin-left 0px
+  @media screen and (max-width: $large-phone)
+    width 300px
+    height 400px
 
 .cubeSlider_3
   width 160px
@@ -58,3 +77,9 @@
     height 124px
   @media screen and (max-width: $large-tablet)
     margin-left 20px
+  @media screen and (max-width: $large-phone)
+    width 140px
+    height 140px
+    margin-left 0px
+    margin-bottom 100px
+    float right

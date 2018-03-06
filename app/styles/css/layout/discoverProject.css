@@ -14,6 +14,14 @@
   transition: opacity 300ms ease, visibility 300ms ease;
   will-change: opacity, visibility;
 }
+@media screen and (max-width: 768px) {
+  .discoverProject {
+    width: 100vw;
+    height: 110rem;
+    top: 0%;
+    transform: translateX(-50%) translateY(0%);
+  }
+}
 .discoverProject:target {
   opacity: 1;
   visibility: visible;
@@ -38,11 +46,22 @@
 @media screen and (max-width: 1200px) {
   .presentationBlock {
     width: 740px;
+    left: 50%;
   }
 }
 @media screen and (max-width: 1023px) {
   .presentationBlock {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .presentationBlock {
     width: 432px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .presentationBlock {
+    width: 300px;
   }
 }
 .presentationBlock__path {

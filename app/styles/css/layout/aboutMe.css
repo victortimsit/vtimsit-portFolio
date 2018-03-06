@@ -20,6 +20,12 @@
     margin-bottom: 10px;
   }
 }
+@media screen and (max-width: 480px) {
+  .description {
+    width: 300px;
+    height: 530px;
+  }
+}
 .picture {
   width: 160px;
   height: 160px;
@@ -50,5 +56,11 @@
   .skills {
     width: 288px;
     height: 288px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skills {
+    width: 300px;
+    margin-left: 0px;
   }
 }

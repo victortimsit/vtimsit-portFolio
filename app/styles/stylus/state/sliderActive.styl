@@ -1,6 +1,12 @@
+@import '../tools/breakpoints.styl'
+
 .slide--bottom .slider__element
 .slide--bottom.slider__element
     transform translateX(-50%) translateY(135vh) !important
+    @media screen and (max-width: $medium-tablet)
+        transform translateX(0%) translateY(0vh) !important
+
+    
 
 .slide--top .slider__element
 .slide--top.slider__element
