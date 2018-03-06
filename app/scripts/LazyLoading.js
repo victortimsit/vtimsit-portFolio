@@ -44,8 +44,6 @@ class LazyLoading {
             $newImg.addEventListener('load', () => {
                 $lazyLoads[0].classList.add(this.loadedClassName)
                 this.$discoverProject.onscroll = () => {
-                    console.log('TOP: ' + $lazyLoads[2].scrollTop);
-
                     console.log(this.$discoverProject.scrollTop)
                     // if (this.$discoverProject.scrollTop > 150) {
                     //     $lazyLoads[2].classList.add(this.loadedClassName)
