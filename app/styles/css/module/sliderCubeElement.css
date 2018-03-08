@@ -55,10 +55,16 @@
   display: flex;
   text-align: center;
 }
-.cubeSlider_3__item .cubeSlider_3__item__button {
+.cubeSlider_3__item__button {
   margin: auto;
 }
-.cubeSlider_3__item .cubeSlider_3__item__button .cubeSlider_3__item__button__slash {
+.cubeSlider_3__item__button__slash {
   display: inline-block;
   margin: 0;
+}
+@media screen and (max-width: 480px) {
+  .cubeSlider_3__item__button__next,
+  .cubeSlider_3__item__button__prev {
+    font-size: 1.4rem;
+  }
 }
