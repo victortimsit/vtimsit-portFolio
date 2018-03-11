@@ -42,9 +42,11 @@ class LazyLoading {
             const $newImg = document.createElement('img')
 
             $newImg.addEventListener('load', () => {
-                $lazyLoads[0].classList.add(this.loadedClassName)
+                for(let i = 0; i <= 2; i++) {
+                    $lazyLoads[i].classList.add(this.loadedClassName)
+                }
                 this.$discoverProject.onscroll = () => {
-                    console.log(this.$discoverProject.scrollTop)
+                    console.log($lazyLoads)
                     // if (this.$discoverProject.scrollTop > 150) {
                     //     $lazyLoads[2].classList.add(this.loadedClassName)
                     //     $lazyLoads[1].classList.add(this.loadedClassName)
@@ -83,7 +85,7 @@ class LazyLoading {
                     //     $lazyLoads[11].classList.add(this.loadedClassName)
                     // }
                     if (this.$discoverProject.scrollTop > 150) {
-                        for(let i = 1; i <= 11; i++) {
+                        for(let i = 1; i <= 12; i++) {
                             $lazyLoads[i].classList.add(this.loadedClassName)
                         }
                     }
@@ -91,7 +93,6 @@ class LazyLoading {
 
             })
             $newImg.src = $img.src
-
         }
     }
 }

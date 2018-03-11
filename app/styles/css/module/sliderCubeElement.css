@@ -10,14 +10,23 @@
 }
 .cubeSlider_1__item {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.cubeSlider_1__item__preview_sketch {
+  width: 100%;
+  height: auto;
 }
 .cubeSlider_1__item__preview {
-  width: 100%;
+  width: auto;
+  height: 100%;
 }
 .cubeSlider_2__item__discover {
-  float: right;
-  margin-right: 30px;
   font-size: 14px;
+  margin-top: 0px;
+  bottom: 20px;
+  right: 30px;
+  position: absolute;
 }
 @media screen and (max-width: 1200px) {
   .cubeSlider_2__item__discover {

@@ -434,3 +434,27 @@
 .presentationBlock__element__mockUps__img:nth-last-child(1) {
   margin-bottom: 80px;
 }
+.discoverProject__mandalaHeader__img {
+  width: 100%;
+}
+.discoverProject__mandalaPreview__img {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.discoverProject__mrJelly__img {
+  width: 300px;
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: -50px;
+}
+.presentationBlock__description__p {
+  width: 380px;
+  margin-left: 0px;
+  margin-top: 40px;
+  display: inline-block;
+  float: left;
+}
