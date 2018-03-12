@@ -42,6 +42,8 @@
 
     position absolute
 
+    user-select none
+
     @media screen and (max-width: $medium-desktop)
         font-size 11px
     @media screen and (max-width: $medium-desktop)
@@ -63,10 +65,10 @@
         background #4A90E2
 
         transition background 150ms ease, transform 150ms
-        &:hover
-            background #F9838E
-        &:active
-            transform scale(0.9)
+        // &:hover
+        //     background #F9838E
+        // &:active
+        //     transform scale(0.9)
 
 .cubeSlider_3__item
     display flex
@@ -74,6 +76,8 @@
 
 .cubeSlider_3__item__button
     margin auto
+
+    user-select none
 
 .cubeSlider_3__item__button__slash
     display inline-block

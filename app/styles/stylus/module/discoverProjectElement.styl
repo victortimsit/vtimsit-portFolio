@@ -4,7 +4,7 @@
 .discoverProject:target .presentationBlock
     transform translateX(-50%) translateY(0%)
     @media screen and (max-width: $large-phone)
-        transform translateX(-50%) translateY(-2%)
+        transform translateX(-50%) translateY(-100px)
 
 // Pages elements
 .discoverProject__return
@@ -39,7 +39,7 @@
     transform scale(0.8)
 
 .presentationBlock__title
-    width 200px
+    width 400px
     margin 0 auto
     margin-top 200px
     margin-bottom 260px
@@ -350,12 +350,25 @@
     margin 0 auto
     margin-top 80px
     margin-bottom 50px
+    @media screen and (max-width: $large-tablet)
+        width 400px
+    @media screen and (max-width: $medium-tablet)
+        width 300px
+    @media screen and (max-width: $large-phone)
+        width 240px
 
 .discoverProject__mrJelly__img
     width 300px
     display inline-block
     margin-left 70px
     margin-top -50px
+    @media screen and (max-width: $large-tablet)
+        width 200px
+        margin-left 20px
+        margin-top 0px
+    @media screen and (max-width: $medium-tablet)
+        margin 0 auto
+        display block
 
 
 .presentationBlock__description__p
@@ -364,3 +377,28 @@
     margin-top 40px
     display inline-block
     float left
+    @media screen and (max-width: $medium-desktop)
+        width 200px
+    @media screen and (max-width: $medium-tablet)
+        width 370px
+        margin-bottom 50px
+    @media screen and (max-width: $large-phone)
+        width 240px
+
+// Logitech mouse
+.presentationBlock__title__logoLogitech
+    width 320px
+    margin-bottom -10px
+    @media screen and (max-width: $large-phone)
+        width 120px
+        margin-bottom 0px
+    
+        
+
+.presentationBlock__context__p
+    width 400px
+    margin-left 0px
+    @media screen and (max-width: $medium-tablet)
+        width 300px
+    @media screen and (max-width: $large-phone)
+        width 250px
