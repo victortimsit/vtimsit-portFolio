@@ -3,7 +3,7 @@
 }
 @media screen and (max-width: 480px) {
   .discoverProject:target .presentationBlock {
-    transform: translateX(-50%) translateY(-2%);
+    transform: translateX(-50%) translateY(-100px);
   }
 }
 .discoverProject__return {
@@ -47,7 +47,7 @@
   transform: scale(0.8);
 }
 .presentationBlock__title {
-  width: 200px;
+  width: 400px;
   margin: 0 auto;
   margin-top: 200px;
   margin-bottom: 260px;
@@ -445,11 +445,39 @@
   margin-top: 80px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1023px) {
+  .discoverProject__mandalaPreview__img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .discoverProject__mandalaPreview__img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .discoverProject__mandalaPreview__img {
+    width: 240px;
+  }
+}
 .discoverProject__mrJelly__img {
   width: 300px;
   display: inline-block;
   margin-left: 70px;
   margin-top: -50px;
+}
+@media screen and (max-width: 1023px) {
+  .discoverProject__mrJelly__img {
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .discoverProject__mrJelly__img {
+    margin: 0 auto;
+    display: block;
+  }
 }
 .presentationBlock__description__p {
   width: 380px;
@@ -457,4 +485,44 @@
   margin-top: 40px;
   display: inline-block;
   float: left;
+}
+@media screen and (max-width: 1200px) {
+  .presentationBlock__description__p {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .presentationBlock__description__p {
+    width: 370px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .presentationBlock__description__p {
+    width: 240px;
+  }
+}
+.presentationBlock__title__logoLogitech {
+  width: 320px;
+  margin-bottom: -10px;
+}
+@media screen and (max-width: 480px) {
+  .presentationBlock__title__logoLogitech {
+    width: 120px;
+    margin-bottom: 0px;
+  }
+}
+.presentationBlock__context__p {
+  width: 400px;
+  margin-left: 0px;
+}
+@media screen and (max-width: 768px) {
+  .presentationBlock__context__p {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .presentationBlock__context__p {
+    width: 250px;
+  }
 }
